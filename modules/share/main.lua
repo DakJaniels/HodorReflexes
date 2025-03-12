@@ -355,6 +355,7 @@ local function SendData()
 	]]--
 	
 	-- Own pings are not processed, so we update our data manually.
+	local lastPingTime = time()
 	M.UpdatePlayerData(playerTag, pingType, ultType, ult, dmg, dps, lastPingTime)
 
 	if isGroupMemberSharing then
